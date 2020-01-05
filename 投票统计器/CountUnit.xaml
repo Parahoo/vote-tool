@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="投票统计器.CountUnit"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:投票统计器"
+             mc:Ignorable="d" 
+             d:DesignHeight="150" d:DesignWidth="150">
+    <Grid>
+        <Button x:Name="votBtn" Content="{Binding Path=UserName}" HorizontalAlignment="Left" Height="76" Margin="10,64,0,0" VerticalAlignment="Top" Width="130" Click="Button_Click" FontSize="20"/>
+        <Label x:Name="label"  Content="{Binding CountNum,Mode=TwoWay}" HorizontalAlignment="Left" Height="43" Margin="39,10,0,0" VerticalAlignment="Top" Width="101" HorizontalContentAlignment="Right" FontSize="24"/>
+        <Button x:Name="cfgBtn" Content="Y" HorizontalAlignment="Left" Height="21" VerticalAlignment="Top" Width="20" Foreground="#FFDCD9D9" Background="#FFF9F7F7" BorderBrush="#FFF0F0F0" Click="cfgBtn_Click" MouseEnter="cfgBtn_MouseEnter" Margin="0,32,0,0"/>
+        <Canvas x:Name="userInput" HorizontalAlignment="Left" Height="45" Margin="10,26,0,0" VerticalAlignment="Top" Width="92" Background="#FFE4DCDC" Visibility="Hidden" MouseLeave="userInput_MouseLeave">
+            <TextBox x:Name="nameInput" Text="{Binding Path=UserName, Mode=TwoWay}" Height="25" Canvas.Left="10" TextWrapping="Wrap" Canvas.Top="10" Width="72"/>
+        </Canvas>
+
+    </Grid>
+</UserControl>

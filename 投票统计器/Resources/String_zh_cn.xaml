@@ -1,0 +1,10 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:投票统计器" xmlns:System="clr-namespace:System;assembly=mscorlib">
+
+    <System:String x:Key="totalvots">总票数：</System:String>
+    <System:String x:Key="redo">撤销</System:String>
+    <System:String x:Key="clear">清空</System:String>
+    <System:String x:Key="MainTitle">投票计数器</System:String>
+
+</ResourceDictionary>
